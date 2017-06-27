@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow</title>
+	<style>
+		div{
+			width: 200px;
+			height: 100px;
+			margin: 100px auto;
+			
+			border: #0f0 10px solid;
+			/* box-shadow: 10px 0 0 10px #0f0; */
+			/* box-shadow: 10px 10px 0px 10px #0f0, -10px -10px  0px 10px  #0f0; */
+			/* box-shadow: -10px 0 0px 10px #0f0,0 -10px  0px 10px #0f0,10px 0 0px 10px #0f0,0px 10px 0px 10px #0f0; */
+
+			/*border: 10px rgba(0,255,0,0.3) solid;
+			padding: 10px;
+
+
+			 box-shadow: 0px 0px 0px 10px rgba(0,0,255,0.3) inset;
+			background: #f00;
+			background-clip: content-box;  */
+
+			/* 层级：边框>内阴影>背景图片>背景颜色>外阴影
+			
+			background:#333 url(images/1.jpg) top left / 100px 100px no-repeat ;
+			box-shadow:0 0 0 10px rgba(0,222,0,0.3),0 0 0 10px rgba(0,202,0,0.3) inset;  */
+
+
+			/* 多个阴影：先写的阴影显示在前面,层级高于后面的阴影 */
+			/* box-shadow: 0 0 0 10px #f00,0 0 0 20px #00f; */
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+	
+</body>
+</html>

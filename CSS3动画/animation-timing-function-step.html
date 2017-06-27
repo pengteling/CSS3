@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation-timing-function:setps 演示</title>
+	<style>
+		.container{
+			width: 600px;
+			border: #00f 1px solid;
+		}
+		.box-1{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			animation: move 3s; 
+			/* 开始动画时以下一帧的显示来填充动画间隔
+			animation-timing-function: step-start; 
+			开始动画时以上一帧的显示来填充动画间隔
+			animation-timing-function: step-end; */
+			
+			animation-timing-function:steps(3);/* steps的设置都是针对两个关键帧之间的，而非是整个keyframes */
+			animation-timing-function:steps(3,end);
+			animation-timing-function:steps(3,start);
+
+			/* start跳过0%，end跳过100% */
+			
+
+			
+		}
+		@keyframes move {
+			0{margin-left: 0}
+			50%{margin-left: 250px;}
+			75%{margin-left: 375px;}
+			100%{margin-left:500px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box-1"></div>
+	</div>
+	
+</body>
+</html>
