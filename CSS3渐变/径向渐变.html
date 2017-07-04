@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>径向渐变</title>
+	<style>
+		.div1{
+			width: 500px;
+			height: 300px;
+			/* 默认情况 */
+			background: radial-gradient(red,green,blue);
+			/* 颜色结点不均匀 */
+			background: radial-gradient(red 10%, green 20%,blue 60%);
+			/* 设置形状 默认形状ellipse*/
+			background: radial-gradient(circle ,red,green,blue); 
+			/* closest-side：
+			指定径向渐变的半径长度为从圆心到离圆心最近的边
+			closest-corner：
+			指定径向渐变的半径长度为从圆心到离圆心最近的角
+			farthest-side：
+			指定径向渐变的半径长度为从圆心到离圆心最远的边
+			farthest-corner：(默认)
+			指定径向渐变的半径长度为从圆心到离圆心最远的角 */
+			background: radial-gradient(closest-corner circle ,red,blue,black);
+			/* 确定圆心的位置 at position 如果提供2个参数，第一个表示横坐标，第二个表示纵坐标；如果只提供一个，第二值默认为50%，即center */
+			background: radial-gradient( at 100px center,red,blue);
+			/* 圆心百分比位置 */
+			background: radial-gradient(at 60% 50%, red,blue);			
+			background: repeating-radial-gradient(red,blue 10%,#f0f 25%);
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	
+</body>
+</html>
