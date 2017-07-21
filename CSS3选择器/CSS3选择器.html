@@ -20,15 +20,56 @@
 			color: #f00
 		} */
 		/* 选择属于父元素的第二个p元素 */
-		p:nth-of-type(2){
+		/* p:nth-of-type(2){
+			color: #00f;
+		} */
+		
+		/* p:nth-of-type(odd){
 			color: #00f;
 		}
+		p:nth-of-type(even){
+			color: #0f0;
+		} */
+		
+		div:last-of-type{
+			color: #f00;
+		}
 
+		/* p:nth-of-type(2n+1){
+			color: #f00;
+		} */
+		/* p:only-child{
+			color: #f00;
+		} */
+		
 
+		/* p:only-of-type{
+			color: #f00;
+		} */
+		/* input:checked + label{
+			color: #f00;
+		} */
+		/* p:empty{
+			
+		}
+		p :empty{
+
+		} */
+
+		/* first-of-type   =   first-child */
+
+		/* Nth-of-type() nth-child()
+		Nth-last-of-type()  nth-last-child()
+		First-of-type  first-child
+		Last-of-type  last-child
+		Only-of-type  only-child */
 
 	</style>
 </head>
 <body>
+	<!-- <input type="radio" name="edu"><label for="">高中</label>
+	<input type="radio" name="edu"><label for="">大学</label>
+	<input type="radio" name="edu"><label for="">研究生</label> -->
 	<ul>
 		<li>li-1</li>
 		<li>li-2</li>
@@ -51,6 +92,11 @@
 		</div>
 		<p>p1</p>
 		<p>p2</p>
+	</div>
+	<div>
+		<div>test</div>
+		<p>p-only</p>
+		<div></div>
 	</div>
 	
 </body>

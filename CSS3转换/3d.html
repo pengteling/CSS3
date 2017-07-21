@@ -7,14 +7,16 @@
 		.stage{
 			width:300px;
 			margin: 200px auto;
-			perspective:600px;
+			border: 1px solid;
+			/* perspective:600px;
+			transform-style: preserve-3d; */
 			transform-style: preserve-3d;
 		}
 		.box{
-			width:200px;
+			
 			height: 200px;
-			transform: rotateY(45deg);
-			perspective: 600px;
+			transform:perspective(600px) rotateY(45deg);
+			
 			background: #fc0;			
 		}
 	</style>

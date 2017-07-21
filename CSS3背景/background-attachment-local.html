@@ -9,6 +9,10 @@
 		background: url(images/1.jpg) no-repeat;
 		overflow: scroll;
 		line-height: 500px;
+		/* 默认scroll 图片在元素的右下角 而local在内容的右下角 */
+		background-position: right bottom;
+
+		background-size: 100px 100px;
 	}
 		.scroll{
 			background-attachment: scroll
@@ -23,6 +27,7 @@
 </head>
 <body>
 	<div class="scroll">
+	<!-- <img src="images/1.jpg" alt=""><br> -->
 		background-attachment: scroll <br>background-attachment: scroll <br>background-attachment: scroll <br>background-attachment: scroll <br>background-attachment: scroll <br>background-attachment: scroll <br>	
 	</div>
 	<div class="fixed">
